@@ -1,4 +1,102 @@
-body {
-	color: red;
+h1,
+h2,
+h3 {
+	font-family: verdana;
+	text-transform: uppercase;
+	color: silver;
+}
 
+a {
+	color: black;
+}
+
+a:hover {
+	color: cyan;
+	text-decoration: none;
+}
+
+
+/* Header */
+header {
+	height: 150px;
+	background-color: black;
+	border-bottom: 5px solid red;
+}
+
+.title {
+	padding: 1.8em;
+	text-align: right;
+}
+
+.logo {
+	margin: 0 0 0 2em;
+}
+
+
+/* Hero */
+.hero {
+	color: white;
+	margin: 2em 0 2em 0;
+	height: 400px;
+	overflow: hidden;
+}
+
+
+/* Featured work & Projects */
+section {
+	width: 100%;
+	margin: 1em;
+}
+
+h3 {
+	padding: 0 0 0 1em;
+	color:#02a6ce;
+}
+
+.project {
+	text-align: center;
+}
+
+.project:hover {
+	box-shadow: 3px 9px 15px 3px rgba(0, 0, 0, .2);
+	background-color: rgba(1, 0, 99, 0.4);
+}
+
+.project:hover :nth-child(2) {
+	color:cyan;
+}
+
+.thumbnail {
+	border: 1px solid black;
+	display: inline-block;
+	width:100%;
+}
+
+
+/* Footer */
+footer {
+text-align: center;
+	height: 200px;
+	background-color: black;
+}
+
+ul {
+	padding: 0;
+	width: 100%;
+
+	list-style: none;
+}
+
+li {
+	display: inline;
+}
+
+.social-media {
+	padding: 0.5em 0.5em 0 0 ;
+	color:white;
+	font-size:3em;
+}
+
+.social-media:hover {
+	color: cyan;
 }
