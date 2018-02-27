@@ -1,6 +1,7 @@
 h1,
 h2,
-h3 {
+h3,
+h5 {
 	font-family: verdana;
 	text-transform: uppercase;
 	color: silver;
@@ -8,10 +9,10 @@ h3 {
 
 a {
 	color: black;
+	font-size: 1.5em;
 }
 
 a:hover {
-	color: cyan;
 	text-decoration: none;
 }
 
@@ -35,7 +36,6 @@ header {
 
 /* Hero */
 .hero {
-	color: white;
 	margin: 2em 0 2em 0;
 	height: 400px;
 	overflow: hidden;
@@ -58,12 +58,8 @@ h3 {
 }
 
 .project:hover {
-	box-shadow: 3px 9px 15px 3px rgba(0, 0, 0, .2);
-	background-color: rgba(1, 0, 99, 0.4);
-}
-
-.project:hover :nth-child(2) {
-	color:cyan;
+	box-shadow: 3px 9px 15px 3px rgba(0, 0, 0,0.2);
+	background-color: rgba(1, 55, 99, 0.2);
 }
 
 .thumbnail {
@@ -75,7 +71,10 @@ h3 {
 
 /* Footer */
 footer {
-text-align: center;
+	justify-content: center;
+	text-align: center;
+	border-top: 5px solid red;
+	align-content: center;
 	height: 200px;
 	background-color: black;
 }
@@ -94,9 +93,39 @@ li {
 .social-media {
 	padding: 0.5em 0.5em 0 0 ;
 	color:white;
-	font-size:3em;
+	font-size:2em;
 }
 
 .social-media:hover {
-	color: cyan;
+	color: #0ff;
+}
+
+@media (max-width: 1091px) {
+	.hero {
+		height: 300px
+	}
+}
+
+@media (max-width: 850px) {
+	header {
+		height: 80px;
+	}
+	.hero {
+		height: 200px;
+		margin: 0;
+	}
+	.title {
+		padding: 0.6em;
+	}
+	h1 {
+		font-size: 1.6em;
+	}
+	h2 {
+		font-size: 1.2em;
+	}
+	.logo {
+		width: 75px;
+		height: 75px;
+		margin: 0;
+	}
 }
